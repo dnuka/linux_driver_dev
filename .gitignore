@@ -1,0 +1,7 @@
+*.k*
+*mod.*
+*.o.*
+*modules.*
+*.o
+*.mod
+*Module.*

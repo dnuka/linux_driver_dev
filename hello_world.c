@@ -1,16 +1,17 @@
 #include <linux/init.h>
 #include <linux/module.h>
+
 MODULE_LICENSE("MIT");
 
 static int hello_init(void)
 {
-	printk(KERN_ALERT "hello, world\n");
-	return 0;
+    printk(KERN_ALERT "Hello, World!\n");
+    return 0;
 }
 
 static void hello_exit(void)
 {
-	printk(KERN_ALERT "goodbye!\n");
+    printk(KERN_ALERT "Good bye!\n");
 }
 
 module_init(hello_init);
