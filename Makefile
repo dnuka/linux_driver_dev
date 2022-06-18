@@ -1,9 +1,13 @@
+ARCH := x86
+CROSS_COMPILE := x86_64-linux-gnu-
+
 obj-m = hello_world.o
 
-KVERSION = $(shell uname -r)
+KDIR := /home/dhanuka/code/c/kernel/linux
+PWD := $(shell pwd)
 
 all:
-	make -C /lib/modules/$(KVERSION)/build M=$(PWD) modules
+	make -C $(KDIR) M=$(PWD) modules
 
 clean:
-	make -C /lib/modules/$(KVERSION)/build M=$(PWD) clean
+	make -C $(KDIR) M=$(PWD) clean
