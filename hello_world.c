@@ -1,7 +1,7 @@
 #include <linux/init.h>
 #include <linux/module.h>
 
-MODULE_LICENSE("MIT");
+MODULE_LICENSE("GPL");
 
 static int hello_init(void)
 {
